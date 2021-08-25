@@ -6,7 +6,8 @@ import java.util.Set;
 
 public class Preduzece {
     private int osnovica;
-    public Preduzece(int osnovica) {
+    public Preduzece(int osnovica) throws NeispravnaOsnovica {
+        if(osnovica<=0) throw new NeispravnaOsnovica("Neispravna osnovica"+Integer.toString(osnovica));
         this.osnovica=osnovica;
     }
 
@@ -20,7 +21,10 @@ public class Preduzece {
     public void obracunajPlatu() {
     }
 
-    public void postaviOsnovicu(int osnovica) {
+    public void postaviOsnovicu(int osnovica) throws NeispravnaOsnovica {
+        if(osnovica<=0) throw new NeispravnaOsnovica("Neispravna osnovica"+Integer.toString(osnovica));
+
+
         this.osnovica=osnovica;
     }
 
