@@ -30,6 +30,10 @@ public class RadnoMjesto {
         return koeficijent;
     }
 
-    public Object getRadnik() {
+    public Radnik getRadnik() {
+        return radnik;
+    }
+    public void setRadnik(Radnik radnik){
+        this.radnik=radnik;
     }
 }

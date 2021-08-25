@@ -19,7 +19,7 @@ class RadnikTest {
         assertEquals("54321", radnik.getJmbg());
     }
 
-   /* @Test
+    @Test
     public void radnikDodajPlatu() {
         Radnik radnik = new Radnik("Sara Sarač", "12345");
         radnik.dodajPlatu(1000);
@@ -40,5 +40,5 @@ class RadnikTest {
                 () -> radnik.dodajPlatu(0),
                 "Ne možete registrovati više od 1000 plata za radnika Maja Majić");
         assertEquals(1000, radnik.prosjecnaPlata());
-    }*/
+    }
 }
